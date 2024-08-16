@@ -1,7 +1,7 @@
 document.getElementById('imcForm').addEventListener('submit', function(event) {
     event.preventDefault();
     var weight = parseFloat(document.getElementById('weight').value);
-    var height = parseFloat(document.getElementById('height').value);
+    var height = parseFloat(document.getElementById('height').value)/100;
     
     if (height > 0) {
         var imc = weight / (height * height);
